@@ -17,7 +17,7 @@ const timerElement = document.getElementById('timer');
                gameContainer.appendChild(card);
            }
        }
-  function shuffle(array) {
+function shuffle(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [array[i], array[j]] = [array[j], array[i]];
@@ -43,6 +43,13 @@ function checkMatch() {
                 card2.classList.add('matched');
                 score += 2;
                 scoreElement.textContent = `Score: ${score}`;
+                if (document.querySelectorAll('.matched').length === cards.length) {
+                    clearInterval(gameInterval);
+                    setTimeout(() => {
+                      alert('Congratulations! You won the game!');
+                      startbtn.disabled = false;
+                    }, 500);
+                  }
             } else {
                 card1.textContent = '?';
                 card2.textContent = '?';
@@ -52,7 +59,7 @@ function checkMatch() {
             selectedCards = [];
         }
 function startGame() {
-            let timeLeft = 30;
+            let timeLeft = 60;
             startbtn.disabled = true;
             score = 0; // Reset score to zero
             scoreElement.textContent = `Score: ${score}`;
