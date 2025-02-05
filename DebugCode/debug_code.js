@@ -12,11 +12,11 @@ function performOperation() {
                     displayResult('Please enter valid numbers');
                 }
             }
-            function multiply(a, b) {
+            function multiply(num1, num2) {
                 // Introduce a debugger statement to pause execution
                 debugger;
                 // Multiply the numbers
-                return a * b;
+                return num1 * num2;
             }
             function displayResult(result) {
                 // Display the result in the paragraph element
