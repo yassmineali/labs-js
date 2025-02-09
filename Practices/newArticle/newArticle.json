@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "title": "Tech Innovation in 2025",
+      "description": "This article explores the latest advancements in technology and their potential impact on society.",
+      "author": "Jane Doe",
+      "published_date": "2025-02-01"
+    },
+    {
+      "title": "Climate Change Effects",
+      "description": "An in-depth analysis of the effects of climate change and the steps needed to mitigate it.",
+      "author": "John Smith",
+      "published_date": "2025-01-20"
+    },
+    {
+      "title": "Sports Highlights",
+      "description": "Top sports events and highlights from the past week.",
+      "author": "Alex Johnson",
+      "published_date": "2025-02-08"
+    }
+  ]
+}
