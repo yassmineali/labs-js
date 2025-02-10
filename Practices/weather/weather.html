@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather</title>
+</head>
+<body>
+   <h1>Weather</h1>
+
+  <form id="weatherForm">
+    <label for="latitude">Enter Latitude:</label>
+    <input type="text" id="latitude" name="latitude">
+
+    <label for="longitude">Enter Longitude:</label>
+    <input type="text" id="longitude" name="longitude" required>
+    <br>
+
+    <button type="submit">Get Weather</button>
+  </form>
+
+  <div id="weatherInfo"></div>
+<script src="./weather.js"></script>
+</body>
+</html>
