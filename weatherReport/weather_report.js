@@ -7,7 +7,7 @@ function showWeatherDetails(event) {
         return;
       }
 
-      const apiKey = 'c4f86ece00bc8aa272652ac9065af12d';
+      const apiKey = 'f858547a4550f75eee241011c2067446';
       const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
       fetch(apiUrl)
@@ -31,4 +31,4 @@ function showWeatherDetails(event) {
         });
     }
 
-    document.getElementById('weatherForm').addEventListener('submit', showWeatherDetails);
+document.getElementById('weatherForm').addEventListener('submit', showWeatherDetails);
